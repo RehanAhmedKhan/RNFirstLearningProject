@@ -1,0 +1,53 @@
+------------------------------SEPERATE REDUCERS-----------------------------------------
+
+// export const message = (state = initialState[0], action) => {
+//   if (action.type == 'MESSAGEDELETE') {
+//     return state.filter(item => item.id != action.payload.id);
+//   } else if (action.type == 'MESSAGEEDIT') {
+//     const newarray = state.map(item => {
+//       if (item.id == action.editVal.id) {
+//         item.name = action.updatedName;
+//         return item;
+//       }
+//       return item;
+//     });
+//     return newarray;
+//   } else if (action.type == 'DISPLAYMESSAGELIST') {
+//     return initialState[0];
+//   } else {
+//     return state;
+//   }
+// };
+
+// export const status = (state = initialState[1], action) => {
+//   if (action.type == 'STATUSDELETE') {
+//     return state.filter(item => item.id != action.payload.id);
+//   } else if (action.type == 'STATUSEDIT') {
+//     return 'Edit';
+//   } else if (action.type == 'DISPLAYSTATUSSLIST') {
+//     return initialState[1];
+//   } else {
+//     return state;
+//   }
+// };
+
+// export const calls = (state = initialState[2], action) => {
+//   if (action.type == 'CALLDELETE') {
+//     return state.filter(item => item.id != action.payload.id);
+//   } else if (action.type == 'CALLEDIT') {
+//     return 'Edit';
+//   } else if (action.type == 'DISPLAYCALLLIST') {
+//     return initialState[2];
+//   } else {
+//     return state;
+//   }
+// };
+
+--------------------------------MAP RETURN------------------------------
+
+// important
+//   const tempItem = item;
+//   tempItem.name = action.updatedName;
+//   return tempItem;
+// }
+// return item;
